@@ -1,0 +1,9 @@
+version: '3'
+services:
+  slackbot:
+    image: slackbot
+    volumes:
+      - ./app:/app
+    environment:
+      - DEFAULT_REPLY="Sorry but I didn't understand you"
+      - SLACK_API_TOKEN="YOUR_API_TOKEN"
