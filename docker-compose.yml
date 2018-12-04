@@ -1,7 +1,7 @@
 version: '3'
 services:
   slackbot:
-    image: slackbot
+    image: okwrtdsh/slackbot:latest
     volumes:
       - ./app:/app
     environment:
