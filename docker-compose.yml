@@ -3,7 +3,7 @@ services:
   slackbot:
     image: okwrtdsh/slackbot:latest
     volumes:
-      - ./app:/app
+      - ./example:/app/plugins
     environment:
-      - DEFAULT_REPLY="Sorry but I didn't understand you"
-      - SLACK_API_TOKEN="YOUR_API_TOKEN"
+      - DEFAULT_REPLY=Sorry but I didn't understand you
+      - API_TOKEN="YOUR_API_TOKEN"

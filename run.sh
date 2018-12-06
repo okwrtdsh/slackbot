@@ -1,5 +1,8 @@
 #!/bin/bash
 set -e
 export PYTHONPATH=/app
-pip3 install -r /app/requirements.txt
+if [ ! -f /app/plugins/__init__.py ]; then
+	touch /app/plugins/__init__.py
+fi
+pip3 install -r /requirements.txt
 python3 /app/run.py

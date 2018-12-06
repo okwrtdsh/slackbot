@@ -5,6 +5,7 @@ RUN pip --no-cache-dir install \
 
 COPY app /app
 COPY run.sh /run.sh
+COPY requirements.txt /requirements.txt
 
 ARG TINI_VERSION=v0.18.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
